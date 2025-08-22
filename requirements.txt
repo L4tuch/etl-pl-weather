@@ -1,0 +1,4 @@
+requests      # to fetch data from Open-Meteo API
+pandas        # data wrangling and transformations
+matplotlib    # basic visualizations
+sqlalchemy    # SQLite database connection and queries
