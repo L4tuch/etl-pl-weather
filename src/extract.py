@@ -1,5 +1,5 @@
 from numpy import long
-from config import DAILY_VARS, TIMEZONE, FORECAST_DAYS, RAW_DIR, today,formatted_date,url,all_results,result,howManyVars
+from config import DAILY_VARS, TIMEZONE, FORECAST_DAYS, RAW_DIR, today,formatted_date,url,all_results,result,howManyVars, Request_timeout
 from regions import REGIONS
 from datetime import datetime
 import requests
@@ -14,7 +14,7 @@ for region, (lan, lon) in REGIONS.items():
     longitude = lon
     urlQuery = f"{url}&latitude={latitude}&longitude={longitude}&daily={result}&timezone={TIMEZONE}&forecast_days={FORECAST_DAYS}"
     #print(f"URL dla {region_name}:{urlQuery}")
-    response = requests.get(urlQuery, timeout=60)
+    response = requests.get(urlQuery, timeout=Request_timeout)
     question = response.json()
     question['region'] = region_name
     all_results.append(question)

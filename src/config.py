@@ -28,3 +28,5 @@ all_results = []
 
 result = ""
 howManyVars = len(DAILY_VARS)
+
+Request_timeout = 60
