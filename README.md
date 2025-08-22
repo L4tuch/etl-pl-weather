@@ -48,6 +48,7 @@ etl-pl-weather/
 │   ├── transform.py   # transform step (clean & aggregate with Pandas)
 │   ├── load_sql.py    # load step (save to SQLite)
 │   ├── regions.py     # region → coordinates mapping
+│   ├── config.py      # config → set default variables
 │   └── main.py        # pipeline entrypoint
 │
 ├── .github/workflows/ # GitHub Actions automation
