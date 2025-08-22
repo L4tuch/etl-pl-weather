@@ -34,22 +34,25 @@ The project is designed as a **learning and portfolio exercise** to demonstrate 
 
 ## 📂 Repository Structure
 
+
+```text
 etl-pl-weather/
 ├── data/
-│ ├── raw/ # raw JSON responses from API
-│ └── processed/ # processed CSV data
+│   ├── raw/           # raw JSON responses from API
+│   └── processed/     # processed CSV data
 │
-├── notebooks/ # Jupyter Notebooks for analysis & charts
+├── notebooks/         # Jupyter Notebooks for analysis & charts
 │
-├── src/ # source code
-│ ├── extract_open_meteo.py # extract step
-│ ├── transform.py # transform step
-│ ├── load_sql.py # load step
-│ ├── regions.py # region → coordinates mapping
-│ └── main.py # pipeline entrypoint
+├── src/               # source code
+│   ├── extract.py     # extract step (fetch from Open-Meteo API)
+│   ├── transform.py   # transform step (clean & aggregate with Pandas)
+│   ├── load_sql.py    # load step (save to SQLite)
+│   ├── regions.py     # region → coordinates mapping
+│   └── main.py        # pipeline entrypoint
 │
 ├── .github/workflows/ # GitHub Actions automation
 │
-├── requirements.txt # dependencies
-├── README.md # project description
+├── requirements.txt   # dependencies
+├── README.md          # project description
+├── LICENSE
 └── .gitignore
