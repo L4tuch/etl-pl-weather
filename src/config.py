@@ -1,4 +1,5 @@
 from pathlib import Path
+from datetime import datetime
 
 # List of daily variables you want to download from Open-Meteo
 DAILY_VARS = [
@@ -16,3 +17,14 @@ FORECAST_DAYS = 1   # how many days forecast
 RAW_DIR = Path("data/raw")
 PROCESSED_DIR = Path("data/processed")
 DB_PATH = Path("data/weather.sqlite")
+
+today = datetime.today()
+formatted_date= today.strftime("%Y-%m-%d")
+
+url = "https://api.open-meteo.com/v1/forecast?"
+
+all_results = []
+
+
+result = ""
+howManyVars = len(DAILY_VARS)

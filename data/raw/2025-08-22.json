@@ -1,0 +1,162 @@
+[
+  {
+    "region": "dolnoslaskie",
+    "date": "2025-08-22",
+    "latitude": 51.1,
+    "longitude": 17.039999,
+    "temperature_2m_max": 19.8,
+    "temperature_2m_min": 13.9,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 16.6
+  },
+  {
+    "region": "kujawsko_pomorskie",
+    "date": "2025-08-22",
+    "latitude": 53.12,
+    "longitude": 17.999998,
+    "temperature_2m_max": 19.9,
+    "temperature_2m_min": 12.5,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 21.5
+  },
+  {
+    "region": "lubelskie",
+    "date": "2025-08-22",
+    "latitude": 51.243538,
+    "longitude": 22.551773,
+    "temperature_2m_max": 23.7,
+    "temperature_2m_min": 16.4,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 21.2
+  },
+  {
+    "region": "lubuskie",
+    "date": "2025-08-22",
+    "latitude": 51.940002,
+    "longitude": 15.499998,
+    "temperature_2m_max": 19.5,
+    "temperature_2m_min": 11.8,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 18.6
+  },
+  {
+    "region": "lodzkie",
+    "date": "2025-08-22",
+    "latitude": 51.764503,
+    "longitude": 19.453964,
+    "temperature_2m_max": 20.5,
+    "temperature_2m_min": 15.8,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 18.7
+  },
+  {
+    "region": "malopolskie",
+    "date": "2025-08-22",
+    "latitude": 50.057274,
+    "longitude": 19.949356,
+    "temperature_2m_max": 23.6,
+    "temperature_2m_min": 17.1,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 18.7
+  },
+  {
+    "region": "mazowieckie",
+    "date": "2025-08-22",
+    "latitude": 52.23009,
+    "longitude": 21.017075,
+    "temperature_2m_max": 22.0,
+    "temperature_2m_min": 13.1,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 16.6
+  },
+  {
+    "region": "opolskie",
+    "date": "2025-08-22",
+    "latitude": 50.68,
+    "longitude": 17.919998,
+    "temperature_2m_max": 20.5,
+    "temperature_2m_min": 12.3,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 22.2
+  },
+  {
+    "region": "podkarpackie",
+    "date": "2025-08-22",
+    "latitude": 50.03909,
+    "longitude": 22.010834,
+    "temperature_2m_max": 21.6,
+    "temperature_2m_min": 14.8,
+    "precipitation_sum": 2.7,
+    "wind_speed_10m_max": 14.0
+  },
+  {
+    "region": "podlaskie",
+    "date": "2025-08-22",
+    "latitude": 53.13046,
+    "longitude": 23.172256,
+    "temperature_2m_max": 23.4,
+    "temperature_2m_min": 10.9,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 16.2
+  },
+  {
+    "region": "pomorskie",
+    "date": "2025-08-22",
+    "latitude": 54.36,
+    "longitude": 18.64,
+    "temperature_2m_max": 19.3,
+    "temperature_2m_min": 13.1,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 20.9
+  },
+  {
+    "region": "slaskie",
+    "date": "2025-08-22",
+    "latitude": 50.26566,
+    "longitude": 19.02475,
+    "temperature_2m_max": 21.5,
+    "temperature_2m_min": 16.8,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 19.1
+  },
+  {
+    "region": "swietokrzyskie",
+    "date": "2025-08-22",
+    "latitude": 50.86819,
+    "longitude": 20.62085,
+    "temperature_2m_max": 22.4,
+    "temperature_2m_min": 16.3,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 20.9
+  },
+  {
+    "region": "warminsko_mazurskie",
+    "date": "2025-08-22",
+    "latitude": 53.783043,
+    "longitude": 20.486542,
+    "temperature_2m_max": 20.3,
+    "temperature_2m_min": 13.0,
+    "precipitation_sum": 1.2,
+    "wind_speed_10m_max": 16.9
+  },
+  {
+    "region": "wielkopolskie",
+    "date": "2025-08-22",
+    "latitude": 52.4,
+    "longitude": 16.919998,
+    "temperature_2m_max": 19.9,
+    "temperature_2m_min": 12.6,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 19.1
+  },
+  {
+    "region": "zachodniopomorskie",
+    "date": "2025-08-22",
+    "latitude": 53.42,
+    "longitude": 14.559999,
+    "temperature_2m_max": 18.2,
+    "temperature_2m_min": 10.7,
+    "precipitation_sum": 0.0,
+    "wind_speed_10m_max": 18.8
+  }
+]

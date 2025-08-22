@@ -1,0 +1,1 @@
+DAILY_VARS[1]
