@@ -1,14 +1,14 @@
-# etl-pl-weather
-ETL: Open-Meteo API → Pandas → SQLite → charts
+# etl-pl-weather  
+ETL: Open-Meteo API → Pandas → SQLite → Charts  
 
 This project implements a simple **ETL pipeline** to collect daily weather data from the [Open-Meteo API](https://open-meteo.com/), transform it using **Pandas**, load it into a **SQLite database**, and finally present the results through visualizations in Jupyter Notebooks.  
 
-The project is designed as a **learning and portfolio exercise** to demonstrate basic skills of a Data Engineer:  
+The project is designed as a **learning and portfolio exercise** to demonstrate basic Data Engineering skills:  
 - Working with APIs  
 - Data extraction and archival (raw JSON)  
 - Data cleaning, transformation, and aggregation with Pandas  
 - Loading data into SQL databases  
-- Visualization and analysis of the processed data  
+- Visualization and analysis of processed data  
 
 ---
 
@@ -30,22 +30,41 @@ The project is designed as a **learning and portfolio exercise** to demonstrate 
 
 ---
 
+
+## 🚀 How to Run
+
+1. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+2. **Run the full ETL pipeline**
+   ```bash
+   python src/main.py
+---
+
+
+
 ## 📂 Repository Structure
 
 ```text
 etl-pl-weather/
 ├── data/
 │   ├── raw/           # raw JSON responses from API
-│   └── processed/     # processed CSV data
+│   ├── processed/     # processed CSV data
+│   └── weather.db     # SQLite database
 │
 ├── notebooks/         # Jupyter Notebooks for analysis & charts
+│   ├── analysis.ipynb
+│   └── example_chart.png   # saved example visualization
+│
+├── sql/               # SQL schema & migrations
+│   └── 0001_init.sql
 │
 ├── src/               # source code
 │   ├── extract.py     # extract step (fetch from Open-Meteo API)
 │   ├── transform.py   # transform step (clean & aggregate with Pandas)
 │   ├── load_sql.py    # load step (save to SQLite)
 │   ├── regions.py     # region → coordinates mapping
-│   ├── config.py      # config → set default variables
+│   ├── config.py      # configuration variables
 │   └── main.py        # pipeline entrypoint
 │
 ├── requirements.txt   # dependencies
