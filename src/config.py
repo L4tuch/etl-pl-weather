@@ -16,7 +16,12 @@ FORECAST_DAYS = 1   # how many days forecast
 # Paths to directories and files
 RAW_DIR = Path("data/raw")
 PROCESSED_DIR = Path("data/processed")
-DB_PATH = Path("data/weather.sqlite")
+DB_PATH = Path("data/weather.db")
+
+TABLE_NAME = "weather_daily"
+PROCESSED_CSV = "data/processed/processed_data.csv"
+CSV_SEP = ";"
+CSV_ENCODING = "utf-8-sig"
 
 today = datetime.today()
 formatted_date= today.strftime("%Y-%m-%d")

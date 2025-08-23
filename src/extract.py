@@ -1,7 +1,5 @@
-from numpy import long
-from config import DAILY_VARS, TIMEZONE, FORECAST_DAYS, RAW_DIR, today, formatted_date, url, all_results, result, howManyVars, Request_timeout
+from config import DAILY_VARS, TIMEZONE, FORECAST_DAYS, RAW_DIR, formatted_date, url, all_results, result, howManyVars, Request_timeout
 from regions import REGIONS
-from datetime import datetime
 import requests
 import json
 
@@ -38,9 +36,9 @@ for rec in all_results:
             row[var] = vals[i] if len(vals) else None
         flat_rows.append(row)
 
-print(flat_rows)
 
-filename = f"data/raw/{formatted_date}.json"
+
+filename = f"{RAW_DIR}/{formatted_date}.json"
 
 with open(filename, "w", encoding="utf-8") as f:
     json.dump(flat_rows, f, ensure_ascii=False, indent=2)
