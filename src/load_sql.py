@@ -13,7 +13,7 @@ def init_db():
 def load_processed_csv():
     """Load processed CSV file into SQLite database (idempotent insert)"""
     # Load processed CSV with region+date as index
-    df = pd.read_csv(PROCESSED_CSV, sep=CSV_SEP, encoding=CSV_ENCODING, index_col=[0, 1])
+    df = pd.read_csv(PROCESSED_CSV, sep=CSV_SEP, encoding=CSV_ENCODING, index_col=["region", "date"])
     df = df.reset_index()  # Reset index so region and date become normal columns
 
     with sqlite3.connect(DB_PATH) as conn:
