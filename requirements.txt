@@ -1,5 +1,4 @@
-requests
-glob          # to combine multiple json files
-pandas
-matplotlib
-sqlalchemy  # optional, only if you plan to use it
+requests       # fetch data from Open-Meteo API
+pandas         # data wrangling and transformations
+matplotlib     # basic visualizations
+sqlalchemy     # optional, database connection
