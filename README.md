@@ -1,5 +1,6 @@
 # etl-pl-weather
 ETL: Open-Meteo API → Pandas → SQLite → charts
+
 This project implements a simple **ETL pipeline** to collect daily weather data from the [Open-Meteo API](https://open-meteo.com/), transform it using **Pandas**, load it into a **SQLite database**, and finally present the results through visualizations in Jupyter Notebooks.  
 
 The project is designed as a **learning and portfolio exercise** to demonstrate basic skills of a Data Engineer:  
@@ -27,13 +28,9 @@ The project is designed as a **learning and portfolio exercise** to demonstrate 
   Perform basic analysis and create visualizations (charts, comparisons between regions, rankings).  
   Provide results in a Jupyter Notebook.  
 
-- **Automate:**  
-  Schedule the pipeline to run **daily** using GitHub Actions, automatically ingesting and persisting fresh data.  
-
 ---
 
 ## 📂 Repository Structure
-
 
 ```text
 etl-pl-weather/
@@ -48,9 +45,8 @@ etl-pl-weather/
 │   ├── transform.py   # transform step (clean & aggregate with Pandas)
 │   ├── load_sql.py    # load step (save to SQLite)
 │   ├── regions.py     # region → coordinates mapping
+│   ├── config.py      # config → set default variables
 │   └── main.py        # pipeline entrypoint
-│
-├── .github/workflows/ # GitHub Actions automation
 │
 ├── requirements.txt   # dependencies
 ├── README.md          # project description
