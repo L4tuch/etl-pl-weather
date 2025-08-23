@@ -12,6 +12,15 @@ DAILY_VARS = [
 # Default query settings
 TIMEZONE = "Europe/Warsaw"
 FORECAST_DAYS = 1   # how many days forecast
+today = datetime.today()
+formatted_date= today.strftime("%Y-%m-%d")
+url = "https://api.open-meteo.com/v1/forecast?"
+all_results = []
+result = ""
+howManyVars = len(DAILY_VARS)
+Request_timeout = 60
+
+
 
 # Paths to directories and files
 RAW_DIR = Path("data/raw")
@@ -23,15 +32,4 @@ PROCESSED_CSV = "data/processed/processed_data.csv"
 CSV_SEP = ";"
 CSV_ENCODING = "utf-8-sig"
 
-today = datetime.today()
-formatted_date= today.strftime("%Y-%m-%d")
 
-url = "https://api.open-meteo.com/v1/forecast?"
-
-all_results = []
-
-
-result = ""
-howManyVars = len(DAILY_VARS)
-
-Request_timeout = 60

@@ -10,5 +10,4 @@ CREATE TABLE IF NOT EXISTS weather_daily (
   PRIMARY KEY (region, date)       -- Unique key: no duplicates for region+date
 );
 
--- Optional: index for faster queries by date
 CREATE INDEX IF NOT EXISTS idx_weather_daily_date ON weather_daily(date);
