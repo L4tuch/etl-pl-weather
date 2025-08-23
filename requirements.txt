@@ -1,4 +1,5 @@
 requests
+glob          # to combine multiple json files
 pandas
 matplotlib
 sqlalchemy  # optional, only if you plan to use it
